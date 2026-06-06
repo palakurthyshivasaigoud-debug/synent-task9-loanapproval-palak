@@ -37,15 +37,15 @@ with st.form("loan_form"):
         education = st.selectbox("Education", ["Graduate", "Not Graduate"])
         self_employed = st.selectbox("Self Employed", ["No", "Yes"])
         income_annum = st.number_input("Annual Income", min_value=100000, max_value=20000000, value=5000000, step=100000)
-        loan_amount = st.number_input("Loan Amount", min_value=100000, max_value=50000000, value=15000000, step=100000)
+        loan_amount = st.number_input("Loan Amount", min_value=10000, value=15000000, step=10000)
         loan_term = st.number_input("Loan Term", min_value=1, max_value=30, value=10, step=1)
 
     with col2:
         cibil_score = st.slider("CIBIL Score", min_value=300, max_value=900, value=700)
-        residential_assets_value = st.number_input("Residential Assets Value", min_value=0, max_value=30000000, value=5000000, step=100000)
-        commercial_assets_value = st.number_input("Commercial Assets Value", min_value=0, max_value=30000000, value=3000000, step=100000)
-        luxury_assets_value = st.number_input("Luxury Assets Value", min_value=0, max_value=50000000, value=10000000, step=100000)
-        bank_asset_value = st.number_input("Bank Asset Value", min_value=0, max_value=20000000, value=4000000, step=100000)
+        residential_assets_value = st.number_input("Residential Assets Value", min_value=10000, value=5000000, step=10000)
+        commercial_assets_value = st.number_input("Commercial Assets Value", min_value=10000, value=3000000, step=10000)
+        luxury_assets_value = st.number_input("Luxury Assets Value", min_value=10000, value=10000000, step=10000)
+        bank_asset_value = st.number_input("Bank Asset Value", min_value=10000, value=4000000, step=10000)
 
     submitted = st.form_submit_button("Predict Loan Status")
 
