@@ -55,9 +55,10 @@ plt.rcParams["axes.labelsize"] = 10
 
 
 def save_chart(path):
+    """Save chart and display it (close window to continue)."""
     plt.tight_layout()
     plt.savefig(path, dpi=150, bbox_inches="tight")
-    plt.close()
+    plt.show()
 
 
 def clean_dataset(df):
