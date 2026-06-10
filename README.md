@@ -10,7 +10,7 @@ Banks and lending teams need quick ways to estimate whether a loan application i
 
 ## Dataset
 
-Source: Loan approval prediction dataset from Kaggle.
+**Source:** [Loan Approval Dataset](https://www.kaggle.com/datasets/rohitgrewal/loan-approval-dataset) - Kaggle
 
 Files:
 
